@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin:0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+#main{
+    display: block;
+}
+html{
+    font-size: 20px;
+}
+/* Header */
+#header{
+    position: fixed;
+    height: 50px;
+    background-color:#000;
+    color: #fff;
+    top:0;
+    left: 0;
+    right:0;
+    z-index: 1;
+}
+#logo{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0 20px;
+}
+#nav{
+    display: inline-block;
+    padding:0;
+    position: relative;
+}
+#nav>li{
+    display: inline-block;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 24px;
+    display: block;
+    cursor: pointer;
+}
+li{
+    list-style-type: none; 
+}
+#search{
+    font-family: "TimeNewRomans";
+    text-align: left;
+    font-size: 20px;
+    width:300px;
+    height: 32px;
+}
+.search:hover{
+    cursor: pointer;
+    background-color:#000;
+    color:#fff;
+}
+.search{
+    display: inline-block;
+    margin: -1px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+    border: 3px solid #fff;
+    background-color: #fff;
+    color: #000;
+}
+#nav li:hover a {
+    color: white;
+    background-color: orange;
+}
+#sign_in,#log_in{
+    padding: 0 24px;
+    display: block;
+    margin-left: 20px;
+    background-color: bisque;
+    cursor: pointer;
+}
+#sign_in:hover,
+#log_in:hover{
+    background-color: red;
+    color: white
+}
+#div-left{
+    width: 25%;
+    height: auto;
+    font-family: Arial;
+    font-size: 20px;
+}
+ /* Slideshow container */
+ .slideshow-container {
+    max-width: 100%;
+    max-height: 50%;
+    top: 50px;
+    position: relative;
+    margin: auto;
+  }
+  /* Ẩn các slider */
+  .mySlides {
+      display: none;
+  }
+  /* Định dạng nội dung Caption */
+  .text {
+    color: #e30eaa;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    top:50%;
+  }
+  /* định dạng các chấm chuyển đổi các slide */
+  .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  /* khi được hover, active đổi màu nền */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+   
+  /* Thêm hiệu ứng khi chuyển đổi các slide */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+   
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
