@@ -30,6 +30,7 @@ html{
     display: inline-block;
     padding:0;
     position: relative;
+    height: 50px;
 }
 #nav>li{
     display: inline-block;
@@ -48,8 +49,8 @@ li{
     font-family: "TimeNewRomans";
     text-align: left;
     font-size: 20px;
-    width:300px;
-    height: 32px;
+    width:400px;
+    height: 32px;   
 }
 .search:hover{
     cursor: pointer;
@@ -58,13 +59,13 @@ li{
 }
 .search{
     display: inline-block;
-    margin: -1px;
-    padding-top: 2px;
+    margin: 5px;
+    padding-top: 0px;
     padding-bottom: 0px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0px;
+    padding-right: 10px;
     font-size: 15px;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     background-color: #fff;
     color: #000;
 }
@@ -73,11 +74,13 @@ li{
     background-color: orange;
 }
 #sign_in,#log_in{
-    padding: 0 24px;
+    margin-top: 7px;
+    padding: 0px 4px;
     display: block;
-    margin-left: 20px;
+    margin-left: 10px;
     background-color: bisque;
     cursor: pointer;
+    float: right;
 }
 #sign_in:hover,
 #log_in:hover{
@@ -90,28 +93,27 @@ li{
     font-family: Arial;
     font-size: 20px;
 }
+/* Dùng chung */
+.text{
+    margin: 40px 30px;
+}
+.col-7{
+    height:50px;
+}
+.col-5{
+    height: 50px;
+}
  /* Slideshow container */
  .slideshow-container {
-    max-width: 100%;
-    max-height: 50%;
+    max-width: 50%;
     top: 50px;
     position: relative;
     margin: auto;
+    box-sizing: border-box;
   }
   /* Ẩn các slider */
   .mySlides {
       display: none;
-  }
-  /* Định dạng nội dung Caption */
-  .text {
-    color: #e30eaa;
-    font-size: 50px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    top:50%;
   }
   /* định dạng các chấm chuyển đổi các slide */
   .dot {
@@ -145,3 +147,14 @@ li{
     from {opacity: .4} 
     to {opacity: 1}
   }
+  /* Content */
+.content-heading{
+    margin-top:20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'TimeNewRomans';
+  }
+#Content{
+    text-align: center;
+    font-family: 'TimeNewRomans';
+}
