@@ -18,7 +18,7 @@
                 <ul id="nav">
                   <li><a href="#">Home</a></li>
                   <li><a href="#PhimHot">Phim Hot</a></li>
-                  <li><a>Thể loại</a></li>
+                  <li><a href="#TinTuc">Tin Tức</a></li>
                   <li><a>Khác</a></li>
                 </ul>
               </div>
@@ -31,71 +31,132 @@
               <input type="button" id="log_in" value="Đăng Nhập">
               </div>
             </div>
-            <!-- <ul id="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#PhimHot">Phim Hot</a></li>
-                <li><a>Thể loại</a></li>
-                <li><a>Khác</a></li>
-                <li><input type="box" id="search" placeholder="Tìm kiếm...."><div class="search">
-                    <i class="search-icon ti-search"></i>
-                </div>
-                </li>
-                <li> 
-                    <input type="button" id="sign_in" value="Đăng Kí">
-                </li>
-                <li>
-                    <input type="button" id="log_in" value="Đăng Nhập">
-                </li>
-            </ul> -->
         </div>
         <!-- Home -->
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-              <img src="https://bloganchoi.com/wp-content/uploads/2022/07/one-piece-film-red-4.jpg" style="width:100%">
-              
+        <div class="row">
+          <div class="col-12">
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+              <img src="https://bloganchoi.com/wp-content/uploads/2022/07/one-piece-film-red-4.jpg" height="10%" width="100%">
             </div>
-           
-            <div class="mySlides fade">
-              <img src="https://c4.wallpaperflare.com/wallpaper/113/311/688/anime-doraemon-wallpaper-preview.jpg" style="width:100%">
-              
+                <div class="mySlides fade">
+                <img src="https://c4.wallpaperflare.com/wallpaper/113/311/688/anime-doraemon-wallpaper-preview.jpg"height="10%" width="100%">
             </div>
 
             <div class="mySlides fade">
-              <img src="https://genk.mediacdn.vn/2019/4/22/photo-1-1555900637253305265175.jpg" style="width:100%">
-              
+              <img src="https://genk.mediacdn.vn/2019/4/22/photo-1-1555900637253305265175.jpg"height="10%" width="100%">  
             </div>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(0)"></span> 
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+          </div>
+          </div>
         </div>
-          <br>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(0)"></span> 
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
         </div>
         <!-- Phim Hot -->
-        <div class="row">
-          <div class="col-12"><h2 id="PhimHot"class="content-heading">Phim Hot</h2></div>
+        <div id="PhimHot">
+          <div class="row">
+            <div class="col-12"><h2 class="content-heading">Phim Hot</h2></div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div id="Content">
+                <div class="text-content slide">
+                  <h3>Kimetsu No Yaiba <br>(Thanh gươm diệt quỷ)</h3>
+                  <p class="text">Thanh gươm diệt quỷ, hay còn được biết tới
+                     với tên gốc Kimetsu no Yaiba là một bộ manga Nhật Bản do 
+                     Gotōge Koyoharu sáng tác và minh hoạ. Truyện kể về hành trình 
+                     trở thành kiếm sĩ diệt quỷ của thiếu niên Kamado Tanjirō sau khi gia đình 
+                     cậu bị quỷ sát hại và em gái Nezuko của cậu bị biến thành quỷ. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <video width="100%" height="100%" controls loop autoplay class="video" >
+                <source src="/HTML/Dự án/img_vid/Demon Slayer- Kimetsu no Yaiba Entertainment District Arc Official Trailer.mp4" type="video/mp4">
+                <source src="/HTML/Dự án/img_vid/Demon Slayer- Kimetsu no Yaiba Entertainment District Arc Official Trailer.mp4" type="video/ogg">
+              </video>
+            </div>
+          </div>
+          <div class="nut-slide">
+            <span id="btn-prev"><i class="ti-angle-left"></i></span>
+            <span id="btn-next"><i class="ti-angle-right"></i></span>
+          </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <div id="Content">
-              <div id="News" class="text-content">
-                <h3>Kimetsu No Yaiba <br>(Thanh gươm diệt quỷ)</h3>
-                <p class="text">Thanh gươm diệt quỷ, hay còn được biết tới
-                   với tên gốc Kimetsu no Yaiba là một bộ manga Nhật Bản do 
-                   Gotōge Koyoharu sáng tác và minh hoạ. Truyện kể về hành trình 
-                   trở thành kiếm sĩ diệt quỷ của thiếu niên Kamado Tanjirō sau khi gia đình 
-                   cậu bị quỷ sát hại và em gái Nezuko của cậu bị biến thành quỷ. </p>
+        <!--Tin Tức -->
+        <ul>
+          <div class="row">
+            <h2 id="TinTuc" class="content-heading">Tin Tức</h2>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-4"><img src="https://s199.imacdn.com/ta/2022/10/08/d5f1c95511cfeb9d_243fd2065530e460_15376216652266242185710.jpg" width="200px" height="100px"></div>
+                <div class="col-8">NGOẠI TRUYỆN CONAN: HỌC VIỆN CẢNH SÁT SẼ QUAY TRỞ LẠI KỂ VỀ HIROMITSU MOROFUSHI!
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-4"><img src="https://s199.imacdn.com/ta/2022/10/07/1656e018315659e0_b40a8a050c7e9180_6847316651493338185710.jpg" width="200px" height="100px"></div>
+                <div class="col-8">SASAKI TO MIYANO CÔNG BỐ THỜI GIAN CHÍNH THỨC RA MẮT BẢN ĐIỆN ẢNH!
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-4"><img src="https://s199.imacdn.com/ta/2022/10/08/b94f986f03511928_3616d9009288438b_14706316652224348734221.jpg" width="200px" height="100px"></div>
+                <div class="col-8">HÉ LỘ TEASER CHO ANIME FUMETSU NO ANATA E SEASON 2
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-4"><img src="https://s199.imacdn.com/ta/2022/10/01/77c71ea214d910dd_02424ea052239ae2_11716316646309989185710.jpg" width="200px" height="100px"></div>
+                <div class="col-8">ĐỐI THỦ CỦA NARUTO, SASUKE SẼ CÓ BẢN CHUYỂN THỂ MANGA!
+                </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <video width="100%" height="100%" controls loop autoplay >
-              <source src="/HTML/Dự án/img_vid/Demon Slayer- Kimetsu no Yaiba Entertainment District Arc Official Trailer.mp4" type="video/mp4">
-              <source src="/HTML/Dự án/img_vid/Demon Slayer- Kimetsu no Yaiba Entertainment District Arc Official Trailer.mp4" type="video/ogg">
-            </video>
+        </ul>
+        <!-- Footer --> 
+        <ul id="footer">
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col col1">
+                  <a href="">Giới thiệu về trang chủ</a><br>
+                  <a href="">Câu hỏi thường gặp</a><br>
+                  <a href="">Chính sách bảo mật</a><br>
+                  <a href="">Kiểm tra hóa đơn điện tử</a><br>
+                  <a href="">Tra cứu thông tin</a>
+                </div>
+                <div class="col col1">
+                  <a href="">Tin khuyến mãi</a><br>
+                  <a href="">Hướng dẫn mua online</a><br>
+                </div>
+                <div class="col col1">
+                  <a href="">Hệ thống của hàng</a><br>
+                  <a href="">Chính sách hoàn trả</a><br>
+                  <a href="">Chính sách bảo hành</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <p> <b>Tư vấn mua hàng</b></p>
+                  <p class="text-danger"><b>1800 9090</b></p>
+                  <p><b>Hỗ trợ thanh toán:</b></p>
+                  <img src="https://vietjet.asia/assets/uploads/2017/06/L%E1%BB%A3i-%C3%ADch-t%E1%BB%AB-vi%E1%BB%87c-s%E1%BB%AD-d%E1%BB%A5ng-visa-card.png" alt="" width="60px" height="40px">
+                  <img src="http://vskills.in/certification/blog/wp-content/uploads/2015/06/ASYNCHRONOUS-TRANSFER-MODEATM.jpeg" alt=""width="60px" height="40px">
+                </div>
+                <div class="col">
+                  <p><b>Góp ý, khiếu nại dịch vụ</b></p>
+                  <p class="text-danger"><b>1800 2993</b></p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <!--  -->
+        </ul>
+        
       </div>  
     <script>
         var slideIndex;
@@ -126,6 +187,7 @@
         function currentSlide(n) {
           showSlides(slideIndex = n);
         }
+      
     </script>
 </body> 
 </html>
