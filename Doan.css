@@ -15,7 +15,7 @@ html{
 /* Header */
 #header{
     position: fixed;
-    height: 50px;
+    height: 55px;
     background-color:#fff;
     color: #000;
     z-index: 1;
@@ -32,10 +32,15 @@ html{
 }
 #nav li a{
     text-decoration: none;
-    line-height: 50px;
-    padding: 0 24px;
+    line-height: 17px;
+    padding: 0px 15px;
     display: block;
     cursor: pointer;
+    color: #000;
+    font-size: 15px;
+    border: solid #CCC;
+    border-radius: 15px 15px 15px;
+    margin: 0px 20px 0px 0;
 }
 li{
     list-style-type: none; 
@@ -83,10 +88,6 @@ li{
     line-height:40px;
     text-align:center;
     float: right;
-}
-#nav li:hover a {
-    color: white;
-    background-color: orange;
 }
 #user:hover,#user-theme:hover{
     cursor: pointer;
@@ -136,10 +137,17 @@ li{
 .col-5{
     height: 50px;
 }
+.logo{
+    width:150px;
+    height:50px;
+    margin-left:100px;
+    border: none!important;
+}
  /* Slideshow container */
  .slideshow-container {
-    max-width: 50%;  
+    width: 70%;  
     top: 50px;
+    max-height: 50%;
     position:relative;
     margin: auto;
     box-sizing: border-box;
@@ -153,7 +161,7 @@ li{
     cursor:pointer;
     height: 13px;
     width: 13px;
-    margin: 0 2px;
+    margin:50px 0px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -180,30 +188,9 @@ li{
     from {opacity: .4} 
     to {opacity: 1}
   }
-  /* Phim Hot */
-  #PhimHot{
-    position: relative;
-    margin-bottom: 20px;
-    padding-bottom:50px;
-  }
-.content-heading{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'TimeNewRomans';
-  }
-#Content{
-    text-align: center;
-    font-family: 'TimeNewRomans';
-}
-.nut-slide span{
-    color: #000;
-    font-size: 60px;
-    opacity: 0.6;
- }
- .prev{
+  .prev{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 0%;
     z-index: 10;
     cursor: pointer;
@@ -214,15 +201,37 @@ li{
  }
  .next{
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 0%;
     z-index: 10;
     cursor: pointer;
  }
+  /* Phim Hot */
+  .content-heading{
+    margin:50px 0 0 0;
+    padding-left:40px;
+    cursor: pointer;
+  }
+  .ti-angle-right,.ti-angle-left{
+    font-size: 20px;
+  }
+  .item-thumnail{
+    width:200px;
+    height:300px;
+    display: inline;
+    padding-left: 10px;
+  }
+  .item-thumnail:hover{
+    cursor: pointer;
+  }
+  .content{
+    padding:5px 20px 5px 30px;
+  }
 /* Tin tức */
-#TinTuc,#PhimHot{
+#TinTuc{
     margin-top: 20px;
     padding-top:20px;
+    cursor: pointer;
 }
 /* Footer */
 #footer{
