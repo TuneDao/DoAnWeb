@@ -12,47 +12,43 @@
 <body>
     <div id="main">
       <div id="header">
-            <!-- <a id="logo" href="#"><img src="https://cdnmedia.webthethao.vn/uploads/2020-11-13/sbtc-logo.jpg" alt="" width="50px" height="45px"></a> -->
-            <div class="row">
-              <div class="col-5">
-                <ul id="nav">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#PhimHot">Phim Hot</a></li>
-                  <li><a href="#TinTuc">Tin Tức</a></li>
-                  <li><a>Khác</a></li>
-                </ul>
-              </div>
-              <div class="col-7">
+        <ul id="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#PhimHot">Phim Hot</a></li>
+          <li><a href="#TinTuc">Tin Tức</a></li>
+          <li><a>Khác</a></li>
+        </ul>
                 <div class="search">
                   <input type="box" id="search" placeholder="Tìm kiếm...."> 
                 <i class="search-icon ti-search"></i>
                 </div>
-              <input type="button" id="sign_in" value="Đăng Kí">
-              <input type="button" id="log_in" value="Đăng Nhập">
-              </div>
-            </div>
-        </div>
+                <div class="" id="user">
+                  <i class="user-icon ti-user"></i>
+                </div>
+                <div id="user-theme">
+                  <i class="ti-shine"></i>
+                </div>
+       </div>
         <!-- Home -->
         <div class="row">
           <div class="col-12">
-              <div class="slideshow-container">
-                <div class="mySlides fade">
-              <img src="https://bloganchoi.com/wp-content/uploads/2022/07/one-piece-film-red-4.jpg" height="10%" width="100%">
-            </div>
-                <div class="mySlides fade">
-                <img src="https://c4.wallpaperflare.com/wallpaper/113/311/688/anime-doraemon-wallpaper-preview.jpg"height="10%" width="100%">
-            </div>
+            <div class="slideshow-container">
+              <div class="mySlides fade img">
+            <img src="/HTML/Dự án/img_vid/chu-thuat-5.jpg" style="width: 2300px;height: 350px;">
+          </div>
+              <div class="mySlides fade img">
+              <img src="/HTML/Dự án/img_vid/maxresdefault_AISR.webp"style="width: 2300px;height: 350px;">
+          </div>
 
-            <div class="mySlides fade">
-              <img src="https://genk.mediacdn.vn/2019/4/22/photo-1-1555900637253305265175.jpg"height="10%" width="100%">  
-            </div>
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(0)"></span> 
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
+          <div class="mySlides fade img">
+            <img src="/HTML/Dự án/img_vid/one-piece-film-red-4.jpg"style="width: 2300px;height: 350px;">  
+          </div>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span> 
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
           </div>
           </div>
-        </div>
         </div>
         <!-- Phim Hot -->
         <div id="PhimHot">
@@ -80,8 +76,8 @@
             </div>
           </div>
           <div class="nut-slide">
-            <span id="btn-prev"><i class="ti-angle-left"></i></span>
-            <span id="btn-next"><i class="ti-angle-right"></i></span>
+            <span class="btn prev"><i class="ti-angle-left"></i></span>
+            <span class="btn next"><i class="ti-angle-right"></i></span>
           </div>
         </div>
         <!--Tin Tức -->
@@ -156,7 +152,6 @@
             </div>
           </div>
         </ul>
-        
       </div>  
     <script>
         var slideIndex;
