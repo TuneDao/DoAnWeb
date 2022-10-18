@@ -211,6 +211,8 @@ li{
     margin:50px 0 0 0;
     padding-left:40px;
     cursor: pointer;
+    font-size: 25px;
+    text-transform: uppercase;
   }
   .ti-angle-right,.ti-angle-left{
     font-size: 20px;
@@ -221,17 +223,41 @@ li{
     display: inline;
     padding-left: 10px;
   }
-  .item-thumnail:hover{
+  .item-thumnail:hover,.item-thumnail-collection:hover{
     cursor: pointer;
   }
   .content{
     padding:5px 20px 5px 30px;
+    width: 1500px;
+    height: 300px;
   }
 /* Tin tức */
 #TinTuc{
     margin-top: 20px;
     padding-top:20px;
     cursor: pointer;
+}
+.news-title{
+    display:inline-block;
+    width:160px;
+    height:90px;
+    font-size: 14px;
+}
+.news-item-thumnail{
+    width: 150px;
+    height: 90px;
+}
+/* Bộ sưu tập */
+#collection{
+    width: 1500px;
+    height: 200px;
+    padding-top:10px;
+    padding-left: 40px;
+}
+.item-thumnail-collection{
+    width: 300px;
+    height: 160px;
+    display: inline;
 }
 /* Footer */
 #footer{
