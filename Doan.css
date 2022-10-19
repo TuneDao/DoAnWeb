@@ -48,11 +48,12 @@ li{
 #search{
     text-align: left;
     font-size: 15px;
-    width: 280px;
+    width: 320px;
     text-align: left;
     font-size: 15px;
     width: 280px;
     border-radius: 10px;
+
 }
 .search-icon:hover{
     cursor: pointer;
@@ -237,15 +238,26 @@ li{
     padding-top:20px;
     cursor: pointer;
 }
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.news-item{
+    margin-top: 10px;
+    padding-left: 40px;
+    padding-bottom:10px;
+}
 .news-title{
     display:inline-block;
     width:160px;
     height:90px;
     font-size: 14px;
+    text-align: center;
 }
 .news-item-thumnail{
     width: 150px;
-    height: 90px;
+    height: 100px;
 }
 /* Bộ sưu tập */
 #collection{
