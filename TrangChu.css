@@ -8,8 +8,6 @@
 #main{
     display: block;
     width: 1400px;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 html{
     font-size: 20px;
@@ -19,11 +17,12 @@ html{
 #header{
     position: fixed;
     height: 60px;
-    background-color:#fff;
+    background-color:rgb(227, 227, 227);
     color: #000;
     z-index: 1;
     width:100%;
     top: 0;
+    padding-left: 40px; 
 }
 #nav{
     display: inline-block;
@@ -124,7 +123,7 @@ li{
     border-radius:50%;
     box-shadow:#cccccc 0px 0px 5px 0px;
     color:#ffffff;
-    margin:5px 100px 0px 0px;
+    margin:10px 100px 0px 0px;
     font-size:20px;
     line-height:40px;
     text-align:center;
@@ -143,7 +142,7 @@ li{
     font-size:25px;
     line-height:38px;
     padding-top: 2px;
-    margin:5px 10px 0px 0px;
+    margin:10px 10px 0px 0px;
     text-align:center;
     float:right;
 }
@@ -186,12 +185,12 @@ li{
 
  }
  .slideshow-container {
-    width: 70%;  
+    width: 80%;
     top: 50px;
-    max-height: 50%;
-    position:relative;
+    position: relative;
     margin: auto;
     box-sizing: border-box;
+    left: 50px;
   }
   /* Ẩn các slider */
   .mySlides {
@@ -297,7 +296,7 @@ li{
     width: 1500px;
     height: 200px;
     padding-top:10px;
-    padding-left: 40px;
+    padding-left: 110px;
 }
 .item-thumnail-collection{
     width: 300px;
@@ -310,10 +309,9 @@ li{
 .season{
     padding-right: 5px;
 }
-/* Footer */
-#footer{
-    margin-top: 30px;
-    padding:40px;
-    background-color:#000;
-    color: white;
+.item-description{
+    margin: -60px 0px 15px 40px;
+    padding: 0 0 0 0;
+    color: rgb(188, 13, 13);    
 }
+/* Footer */
