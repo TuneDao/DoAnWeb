@@ -40,8 +40,8 @@ create table CTDONHANG
 SoDH int,
 MaPhim int,
 SoLuong int check(SoLuong >0),
-DongGia decimal(9,2) check (DongGia >=0),
-ThanhTien as SoLuong*DongGia,
+DonGia decimal(9,2) check (DonGia >=0),
+ThanhTien as SoLuong*DonGia,
 Constraint PK_CTDONHANG primary key(SoDH,MaPhim)
 )
 GO
@@ -176,9 +176,9 @@ INSERT [dbo].[DONDATHANG] ([SoDH], [MaKH], [NgayDH], [TriGia],[DaGiao],[NgayGiao
 INSERT [dbo].[DONDATHANG] ([SoDH], [MaKH], [NgayDH], [TriGia],[DaGiao],[NgayGiaoHang]) VALUES (2,1,CAST('2022-06-05' as datetime), CAST(65000.00 as decimal(9,2)), 0,CAST('2022-06-10' as datetime))
 SET IDENTITY_INSERT [dbo].[DONDATHANG] OFF
 
-INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DongGia]) VALUES (1,10,1,85000)
-INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DongGia])VALUES (1,8,3,61000)
-INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DongGia])VALUES (1,5,2,20000)
-INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DongGia])VALUES (1,1,2,26000)
-INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DongGia])VALUES (1,2,3,12000)
+INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DonGia]) VALUES (1,10,1,85000)
+INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DonGia])VALUES (1,8,3,61000)
+INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DonGia])VALUES (1,5,2,20000)
+INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DonGia])VALUES (1,1,2,26000)
+INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DonGia])VALUES (1,2,3,12000)
 
