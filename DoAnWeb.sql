@@ -181,4 +181,3 @@ INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DonGia])VALUES (1,8,3,61000
 INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DonGia])VALUES (1,5,2,20000)
 INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DonGia])VALUES (1,1,2,26000)
 INSERT [dbo].[CTDONHANG] ([SoDH],[MaPhim],[SoLuong],[DonGia])VALUES (1,2,3,12000)
-
